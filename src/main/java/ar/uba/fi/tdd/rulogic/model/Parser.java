@@ -23,13 +23,12 @@ public class Parser {
             this.lineas = baseLineas.collect(Collectors.toList());
             if (!this.acomodarDB()) {
                 System.out.println("La base no esta correctamente confeccionada");
-                exit(1);
-
+                exit(0);
             }
         }
         catch (NullPointerException | IOException | URISyntaxException e) {
             System.out.println("hubo un problema con el archivo de data base");
-            exit(1);
+            e.getStackTrace();
         }
     }
 

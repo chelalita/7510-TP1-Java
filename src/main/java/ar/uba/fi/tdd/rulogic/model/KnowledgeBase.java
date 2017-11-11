@@ -1,9 +1,7 @@
 package ar.uba.fi.tdd.rulogic.model;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import static java.lang.System.exit;
 
 public class KnowledgeBase {
 	Parser parser;

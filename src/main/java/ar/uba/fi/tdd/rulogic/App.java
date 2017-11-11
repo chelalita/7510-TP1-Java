@@ -5,7 +5,6 @@ import ar.uba.fi.tdd.rulogic.model.Parser;
 
 import java.util.Scanner;
 
-import static java.lang.System.exit;
 
 /**
  * Console application.
@@ -22,7 +21,7 @@ public class App
 			System.out.println("Make your question: \n");
 			Scanner scan= new Scanner(System.in);
 			text= scan.nextLine();
-			if (text.compareTo("*") == 0) exit(0);
+			if (text.compareTo("*") == 0) break;
 			System.out.println(kb.answer(text));
 		}
 
