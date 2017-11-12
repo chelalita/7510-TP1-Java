@@ -28,7 +28,6 @@ public class Parser {
         }
         catch (NullPointerException | IOException | URISyntaxException e) {
             System.out.println("hubo un problema con el archivo de data base");
-            e.getStackTrace();
         }
     }
 

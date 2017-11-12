@@ -40,4 +40,16 @@ public class KnowledgeBaseTest {
 
 	}
 
+	@Test
+	public void tioFalso() {
+
+		Assert.assertFalse(this.knowledgeBase.answer("tio(nicolas,cecilia,patricio)"));
+
+	}
+
+
+
+
+
+
 }
